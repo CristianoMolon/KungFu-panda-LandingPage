@@ -1,6 +1,9 @@
 @use 'variaveis';
 @use 'header';
 @use 'hero';
+@use 'characters';
+@use 'antagonist';
+@use 'footer';
 
 * {
     margin: 0;
@@ -87,6 +90,7 @@ body {
     height: 40px;
     font-size: 18px;
     border: none;
+    background-color: variaveis.$corSecundaria;
     color: variaveis.$corTexto;
     text-transform: uppercase;
     border-radius: 4px;

@@ -3,7 +3,6 @@
 .hero {
     padding: 5.6vw;
     min-height: 80vh;
-    background-image: url(../images/kung_fu_panda_hero.jpeg);
     background-size: cover;
     text-align: center;
 
@@ -14,9 +13,37 @@
         &__branding {
             max-width: 320px;
             margin: 0 auto 38px;
+            display: block;
 
             img {
-                height: 120px;
+                width: 360px;
+                margin-right: 2vw;
+            }
+        }
+
+        &__desc {
+            display: flex;
+            justify-content: center;
+
+            &__item {
+                margin: 8px;
+                margin-top: 16px;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                img {
+                    height: 18px;
+                }
+            }
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+
+            .button--hero {
+                margin-top: 1vw;
+                width: 40%
             }
         }
     }

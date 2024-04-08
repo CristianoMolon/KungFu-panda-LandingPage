@@ -1,0 +1,50 @@
+@use 'variaveis';
+
+.transition {
+    height: 200px;
+    background-image: linear-gradient(to top, variaveis.$corPrimaria, variaveis.$corDeFundo);
+}
+
+.characters {
+    padding: 5.6vw;
+    background-color: variaveis.$corPrimaria;
+
+    h2 {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 30px;
+
+        figure {
+            width: 300px;
+            height: 400px;
+            margin: auto;
+
+            figcaption {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                bottom: 32px;
+                color: variaveis.$corBotaoHeaderP;
+                font-weight: bold;
+            }
+
+            img {
+                width: 100%;
+                width: 300px;
+                height: 400px;
+                border: 6px solid variaveis.$corTexto;
+                border-bottom: 32px solid white;
+                border-radius: 8px;
+
+                &:hover {
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}

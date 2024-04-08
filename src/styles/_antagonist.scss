@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.transition__two {
+    height: 200px;
+    background-image: linear-gradient(to top, variaveis.$corDeFundoAntagonista, variaveis.$corPrimaria)
+}
+
+.antagonista {
+    padding: 5.6vw;
+    background-color: variaveis.$corDeFundoAntagonista;
+
+    h2 {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__content {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: calc(50% - 5.6vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

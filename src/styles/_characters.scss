@@ -19,12 +19,12 @@
         flex-wrap: wrap;
         gap: 40px 30px;
 
-        figure {
+        .character__card {
             width: 300px;
             height: 400px;
             margin: auto;
 
-            figcaption {
+            &__description {
                 position: relative;
                 display: flex;
                 justify-content: center;
